@@ -257,8 +257,8 @@ var MakePerson = function (name, birthday, ssn) {
 
 // Create a function called MakeCard which takes in all the data it needs to make a Credit Card object and returns that object so that whenever you invoke MakeCard, you get a brand new credit card.
 
-var MakeCard = function (name, cardNumber, expDate, billingZIP) {
-    var newCard = {name, cardNumber, expDate, billingZIP};
+var MakeCard = function (cardNumber, expDate, billingZIP) {
+    var newCard = {cardNumber, expDate, billingZIP};
     return newCard;
 }
   
@@ -274,7 +274,14 @@ var MakeCard = function (name, cardNumber, expDate, billingZIP) {
 */
 
 var bindCard = function (person, card) {
-    
+    var cardCustomer = {};
+    for (var p in person) {
+        cardCustomer[p];
+    }
+    for (var p in card) {
+        cardCustomer[p];
+    }
+    return cardCustomer;
 }
 
 
